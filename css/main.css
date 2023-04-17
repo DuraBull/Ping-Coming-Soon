@@ -196,6 +196,7 @@ body {
   display: flex;
   flex-direction: column;
   place-items: center;
+  padding: 0 2em;
 }
 
 .main-container {
@@ -225,6 +226,9 @@ body {
 .notify-form {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 650px;
+  min-width: 300px;
   gap: 1em;
   place-content: center;
   margin-bottom: 5.2rem;
@@ -236,6 +240,7 @@ body {
   font-size: 16px;
   padding: 1.1rem 2rem;
   max-width: 420px;
+  min-width: 300px;
   width: 100%;
 }
 .email:focus-within {
@@ -250,6 +255,7 @@ body {
   border: none;
   border-radius: 35px;
   padding: 1rem 4rem;
+  max-inline-size: 320px;
 }
 .btn:active {
   background: #668ff4;
@@ -262,7 +268,7 @@ body {
   font-size: 12px;
   font-weight: 600;
   top: 4rem;
-  left: 2.3rem;
+  left: 5%;
 }
 
 .error {
@@ -275,6 +281,8 @@ body {
 
 .hero {
   max-width: 650px;
+  min-width: 300px;
+  width: 100%;
   margin-bottom: 3.3rem;
 }
 
@@ -302,4 +310,27 @@ body {
   font-weight: 300;
   font-size: 12px;
   margin: 1.5rem 0 3rem;
+}
+
+@media screen and (max-width: 50em) {
+  .main-header {
+    font-size: 1.5rem;
+  }
+  .subscribe {
+    font-size: 1rem;
+  }
+  .notify-form {
+    gap: 2em;
+    margin-bottom: 3em;
+  }
+  .btn {
+    max-width: 420px;
+    width: 100%;
+  }
+  .error-message {
+    left: auto;
+  }
+  .hero {
+    margin-bottom: 6em;
+  }
 }/*# sourceMappingURL=main.css.map */
