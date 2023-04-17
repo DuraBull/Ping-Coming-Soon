@@ -19,6 +19,9 @@
 .notify-form
     position: relative
     display: flex
+    flex-wrap: wrap
+    max-width: 650px
+    min-width: 300px
     gap: 1em
     place-content: center
     margin-bottom: 5.2rem
@@ -29,6 +32,7 @@
     font-size: 16px
     padding: 1.1rem 2rem
     max-width: 420px
+    min-width: 300px
     width: 100%
 
     &:focus-within
@@ -42,6 +46,7 @@
     border: none
     border-radius: 35px
     padding: 1rem 4rem
+    max-inline-size: 320px
 
     &:active
         background: lighten($blue, 5%)
@@ -53,7 +58,7 @@
     font-size: 12px
     font-weight: $font-semibold
     top: 4rem
-    left: 2.3rem
+    left: 5%
 .error
     border: 1px solid $light-red
 .inv
@@ -61,6 +66,8 @@
 
 .hero
     max-width: 650px
+    min-width: 300px
+    width: 100%
     margin-bottom: 3.3rem
 
 .social-icons
